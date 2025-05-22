@@ -326,6 +326,19 @@
     </div>
   </aside>
 
+  <!-- Receipt Modal -->
+  <div id="receiptModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-60">
+    <div class="w-full max-w-lg bg-white rounded-lg shadow-lg p-6 relative max-h-[90vh] overflow-y-auto">
+      <button id="closeReceiptBtn" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 focus:outline-none" aria-label="Close receipt">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+      <h2 class="text-2xl font-semibold text-[#f97316] mb-4 text-center">Order Receipt</h2>
+      <div id="receiptContent" class="text-sm text-gray-800 whitespace-pre-wrap">
+        <!-- Receipt details will be inserted here -->
+      </div>
+    </div>
+  </div>
+
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
     import {
@@ -377,6 +390,9 @@
     const productsGrid = document.getElementById("productsGrid");
     const searchInput = document.getElementById("searchInput");
     const homeBtnBreadcrumb = document.getElementById("homeBtnBreadcrumb");
+    const receiptModal = document.getElementById("receiptModal");
+    const receiptContent = document.getElementById("receiptContent");
+    const closeReceiptBtn = document.getElementById("closeReceiptBtn");
 
     // Sample products data
     const products = [
@@ -604,9 +620,27 @@
       cartSidebar.classList.add("translate-x-full");
     });
 
-    // Checkout button click
+    // Checkout button click - show receipt summary
     checkoutBtn.addEventListener("click", () => {
-      alert("Checkout functionality is not implemented in this demo.");
+      if (Object.keys(cart).length === 0) {
+        alert("Your cart is empty.");
+        return;
+      }
+      let receipt = "Order Summary:\n\n";
+      let total = 0;
+      Object.entries(cart).forEach(([id, qty]) => {
+        const product = products.find(p => p.id === id);
+        const itemTotal = product.price * qty;
+        total += itemTotal;
+        receipt += `${product.name} x ${qty} = ₱${itemTotal.toLocaleString()}\n`;
+      });
+      receipt += `\nTotal: ₱${total.toLocaleString()}`;
+      alert(receipt);
+      // Clear cart after checkout
+      cart = {};
+      saveCart();
+      renderCart();
+      cartSidebar.classList.add("translate-x-full");
     });
 
     // Show modal on header sign in click
