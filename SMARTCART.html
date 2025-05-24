@@ -1,3 +1,59 @@
+RAGOS
+j25ames
+Online
+
+RAGOS — 21/04/2025 7:14 am
+f
+You missed a call from 
+Jeweck
+ that lasted 3 minutes. — 16/05/2025 9:54 pm
+Jeweck — 16/05/2025 9:54 pm
+oi
+Jeweck — 22/05/2025 3:13 pm
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Home Appliances Store - Signup, Login & Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+Expand
+message.txt
+30 KB
+yan
+Jeweck — 22/05/2025 4:04 pm
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Home Appliances Store - Signup, Login & Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+Expand
+message.txt
+31 KB
+Jeweck — 22/05/2025 9:49 pm
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Home Appliances Store - Signup, Login & Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+Expand
+message.txt
+29 KB
+Jeweck — 10:26 pm
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Home Appliances Store - Signup, Login & Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+Expand
+message.txt
+29 KB
+﻿
+Jeweck
+jewick_29
+ 
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -298,7 +354,31 @@
     </div>
   </div>
 
-  
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
+    import {
+      getAuth,
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword,
+      onAuthStateChanged,
+      signOut,
+    } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-auth.js";
+
+    // Your Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyAvqUEeadXULepbEuo77TxqEv8EmoZR0Z0",
+      authDomain: "smartcart-c1c20.firebaseapp.com",
+      projectId: "smartcart-c1c20",
+      storageBucket: "smartcart-c1c20.firebasestorage.app",
+      messagingSenderId: "703850020571",
+      appId: "1:703850020571:web:4e7793246bd720e5d116fe",
+      measurementId: "G-ZW53LF1Y19",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
     // Elements
     const signupForm = document.getElementById("signupForm");
     const loginForm = document.getElementById("loginForm");
@@ -354,10 +434,10 @@
       },
       {
         id: "p4",
-        name: "Sharp 2-Door Refrigerator",
+        name: "Sharp Door Refrigerator",
         price: 18000,
         img: "https://storage.googleapis.com/a1aa/image/81e36be0-9de4-46ad-0db5-f66997b01f5f.jpg",
-        alt: "Sharp 2-Door Refrigerator, silver refrigerator with freezer on top",
+        alt: "Sharp Door Refrigerator, silver refrigerator with freezer on top",
       },
       {
         id: "p5",
