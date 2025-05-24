@@ -8,14 +8,14 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAvqUEeadXULepbEuo77TxqEv8EmoZR0Z0",
-  authDomain: "smartcart-c1c20.firebaseapp.com",
-  projectId: "smartcart-c1c20",
-  storageBucket: "smartcart-c1c20.firebasestorage.app",
-  messagingSenderId: "703850020571",
-  appId: "1:703850020571:web:4e7793246bd720e5d116fe",
-  measurementId: "G-ZW53LF1Y19"
-};
+    apiKey: "AIzaSyDjUixl72E6Q_ikZndW3q9NtFzIZDi8kuc",
+    authDomain: "smart-cart-67577.firebaseapp.com",
+    projectId: "smart-cart-67577",
+    storageBucket: "smart-cart-67577.firebasestorage.app",
+    messagingSenderId: "53620435226",
+    appId: "1:53620435226:web:691c0cf81fdb995ac5e4a3",
+    measurementId: "G-0E8W96SM3Z"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
