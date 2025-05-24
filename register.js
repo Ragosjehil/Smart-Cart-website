@@ -416,5 +416,3 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCart();
   renderProducts(products);
 });
-message.txt
-15 KB
