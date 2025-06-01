@@ -25,8 +25,7 @@
     <div class="flex-1 text-center sm:text-left">
       Your One-Stop Shop for your Home Renovation needs.
     </div>
-    <div class="flex-1 text-center sm:text-right">
-    </div>
+    <div class="flex-1 text-center sm:text-right"></div>
   </div>
   <!-- Header -->
   <header class="bg-white shadow-md">
@@ -70,8 +69,7 @@
       </div>
     </div>
     <!-- Navigation bar -->
-    <nav class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center sm:items-stretch gap-4 sm:gap-0 px-4 sm:px-10 py-2 border-t border-gray-200">
-    </nav>
+    <nav class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center sm:items-stretch gap-4 sm:gap-0 px-4 sm:px-10 py-2 border-t border-gray-200"></nav>
   </header>
   <!-- Shop Now Banner -->
   <section class="bg-[#fff7ed] border-b border-gray-200 py-6">
@@ -89,30 +87,13 @@
   <main id="homePage" class="max-w-7xl mx-auto px-4 sm:px-10 py-8 flex flex-col sm:flex-row gap-6 flex-1 hidden">
     <!-- Left Sidebar Categories -->
     <aside class="w-full sm:w-60 bg-white border border-gray-200 rounded shadow-sm">
-      <div class="bg-[#f97316] text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-t">
-      Categories
-      </div>
+      <div class="bg-[#f97316] text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-t">Categories</div>
       <ul class="divide-y divide-gray-200 text-xs sm:text-sm" id="categoryList">
-        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer flex justify-between items-center" data-category="all">
-          All Categories
-          <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
-        </li>
-        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer flex justify-between items-center" data-category="Kitchen Appliances">
-          Kitchen Appliances
-          <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
-        </li>
-        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer flex justify-between items-center" data-category="Laundry Appliances">
-          Laundry Appliances
-          <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
-        </li>
-        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer flex justify-between items-center" data-category="Cleaning Appliances">
-          Cleaning Appliances
-          <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
-        </li>
-        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer flex justify-between items-center" data-category="Entertainment & Climate Control Appliances">
-          Entertainment & Climate Control Appliances
-          <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
-        </li>
+        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer" data-category="all">All Categories<i class="fas fa-chevron-right text-gray-400 text-xs"></i></li>
+        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer" data-category="Kitchen Appliances">Kitchen Appliances<i class="fas fa-chevron-right text-gray-400 text-xs"></i></li>
+        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer" data-category="Laundry Appliances">Laundry Appliances<i class="fas fa-chevron-right text-gray-400 text-xs"></i></li>
+        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer" data-category="Cleaning Appliances">Cleaning Appliances<i class="fas fa-chevron-right text-gray-400 text-xs"></i></li>
+        <li class="category-item px-4 py-2 font-semibold hover:bg-gray-50 cursor-pointer" data-category="Entertainment & Climate Control Appliances">Entertainment & Climate Control Appliances<i class="fas fa-chevron-right text-gray-400 text-xs"></i></li>
       </ul>
     </aside>
 
@@ -124,138 +105,62 @@
   </main>
 
   <!-- Login/Signup Modal -->
-  <div
-    id="authModal"
-    class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50"
-  >
+  <div id="authModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 hidden z-50">
     <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-8 relative">
-      <button
-        id="closeModalBtn"
-        class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 focus:outline-none"
-        aria-label="Close modal"
-      >
+      <button id="closeModalBtn" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 focus:outline-none" aria-label="Close modal">
         <i class="fas fa-times text-xl"></i>
       </button>
-      <h2
-        class="text-2xl font-semibold text-[#f97316] mb-6 text-center"
-        id="formTitle"
-      >
-        Sign Up
-      </h2>
+      <h2 class="text-2xl font-semibold text-[#f97316] mb-6 text-center" id="formTitle">Sign Up</h2>
 
       <!-- Signup Form -->
       <form id="signupForm" class="space-y-6">
         <div>
-          <label
-            for="signupEmail"
-            class="block text-sm font-medium text-gray-700 mb-1"
-            >Email address</label
-          >
-          <input
-            id="signupEmail"
-            type="email"
-            required
-            placeholder="you@example.com"
-            class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f97316]"
-          />
+          <label for="signupEmail" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+          <input id="signupEmail" type="email" required placeholder="you@example.com" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f97316]" />
         </div>
         <div>
-          <label
-            for="signupPassword"
-            class="block text-sm font-medium text-gray-700 mb-1"
-            >Password</label
-          >
-          <input
-            id="signupPassword"
-            type="password"
-            required
-            placeholder="Enter your password"
-            class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f97316]"
-          />
+          <label for="signupPassword" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          <input id="signupPassword" type="password" required placeholder="Enter your password" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f97316]" />
         </div>
-        <button
-          id="signupBtn"
-          type="submit"
-          class="w-full bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-2 rounded transition"
-        >
-          Sign Up
-        </button>
+        <button id="signupBtn" type="submit" class="w-full bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-2 rounded transition">Sign Up</button>
       </form>
 
       <!-- Login Form -->
       <form id="loginForm" class="space-y-6 hidden">
         <div>
-          <label
-            for="loginEmail"
-            class="block text-sm font-medium text-gray-700 mb-1"
-            >Email address</label
-          >
-          <input
-            id="loginEmail"
-            type="email"
-            required
-            placeholder="you@example.com"
-            class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f97316]"
-          />
+          <label for="loginEmail" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+          <input id="loginEmail" type="email" required placeholder="you@example.com" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f97316]" />
         </div>
         <div>
-          <label
-            for="loginPassword"
-            class="block text-sm font-medium text-gray-700 mb-1"
-            >Password</label
-          >
-          <input
-            id="loginPassword"
-            type="password"
-            required
-            placeholder="Enter your password"
-            class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f97316]"
-          />
+          <label for="loginPassword" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          <input id="loginPassword" type="password" required placeholder="Enter your password" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#f97316]" />
         </div>
-        <button
-          id="loginBtn"
-          type="submit"
-          class="w-full bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-2 rounded transition"
-        >
-          Log In
-        </button>
+        <button id="loginBtn" type="submit" class="w-full bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-2 rounded transition">Log In</button>
       </form>
 
       <p class="mt-6 text-center text-sm text-gray-600">
         <span id="toggleText">Already have an account?</span>
-        <button
-          id="toggleBtn"
-          class="text-[#f97316] font-semibold hover:underline focus:outline-none"
-        >
-          Log In
-        </button>
+        <button id="toggleBtn" class="text-[#f97316] font-semibold hover:underline focus:outline-none">Log In</button>
       </p>
     </div>
   </div>
 
   <!-- Cart Sidebar -->
-  <aside
-    id="cartSidebar"
-    class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg border-l border-gray-300 transform translate-x-full transition-transform z-50 flex flex-col"
-  >
+  <aside id="cartSidebar" class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg border-l border-gray-300 transform translate-x-full transition-transform z-50 flex flex-col">
     <div class="flex items-center justify-between p-4 border-b border-gray-200">
       <h3 class="text-lg font-semibold text-[#f97316]">Shopping Cart</h3>
       <button id="closeCartBtn" aria-label="Close cart" class="text-gray-600 hover:text-gray-900 focus:outline-none">
         <i class="fas fa-times text-xl"></i>
       </button>
     </div>
-    <div id="cartItems" class="flex-1 overflow-y-auto p-4 space-y-4">
-      <!-- Cart items will be dynamically inserted here -->
-    </div>
+    <div id="cartItems" class="flex-1 overflow-y-auto p-4 space-y-4"></div>
     <div class="p-4 border-t border-gray-200">
       <div class="flex justify-between font-semibold text-gray-900 mb-4">
         <span>Total:</span>
         <span id="cartTotal">₱0.00</span>
       </div>
       <div class="flex gap-2">
-        <button id="checkoutBtn" class="flex-1 bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-2 rounded transition disabled:opacity-50" disabled>
-          Checkout
-        </button>
+        <button id="checkoutBtn" class="flex-1 bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-2 rounded transition disabled:opacity-50" disabled>Checkout</button>
       </div>
     </div>
   </aside>
@@ -267,16 +172,12 @@
         <i class="fas fa-times text-xl"></i>
       </button>
       <h2 class="text-2xl font-semibold text-[#f97316] mb-4 text-center">Order Receipt</h2>
-      <div id="receiptContent" class="text-sm text-gray-800 whitespace-pre-wrap">
-        <!-- Receipt details will be inserted here -->
-      </div>
+      <div id="receiptContent" class="text-sm text-gray-800 whitespace-pre-wrap"></div>
     </div>
   </div>
 
   <!-- Add Product Button (Floating Bottom Right) -->
-  <button id="openAddProductBtn"
-    class="fixed bottom-6 left-6 z-50 shadow-lg bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-3 px-5 rounded-full flex items-center gap-2 transition-all"
-    style="box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
+  <button id="openAddProductBtn" class="fixed bottom-6 left-6 z-50 shadow-lg bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-3 px-5 rounded-full flex items-center gap-2 transition-all" style="box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
     <i class="fas fa-plus"></i>
     Add Product
   </button>
@@ -338,4 +239,15 @@
         </div>
         <div>
           <label for="editProductName" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-          <input id="
+          <input id="editProductName" type="text" required class="w-full border border-gray-300 rounded px-3 py-2 text-sm" />
+        </div>
+        <div>
+          <label for="editProductImage" class="block text-sm font-medium text-gray-700 mb-1">Image URL</label>
+          <input id="editProductImage" type="url" required class="w-full border border-gray-300 rounded px-3 py-2 text-sm" />
+        </div>
+        <div>
+          <label for="editProductPrice" class="block text-sm font-medium text-gray-700 mb-1">Price</label>
+          <input id="editProductPrice" type="number" step="0.01" required class="w-full border border-gray-300 rounded px-3 py-2 text-sm" />
+        </div>
+        <div>
+          <label for
